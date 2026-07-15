@@ -4,7 +4,7 @@ metadata:
   name: redis
   labels:
     name: redis
-    app: app:votacion
+    app: app-votacion
 spec:
   type: ClusterIP
   ports:
@@ -13,4 +13,4 @@ spec:
     name: "redis-service"
   selector:
     name: redis
-    app: app:votacion 
+    app: app-votacion 

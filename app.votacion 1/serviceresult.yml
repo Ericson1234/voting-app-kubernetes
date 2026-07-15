@@ -4,14 +4,15 @@ metadata:
   name: result
   labels:
     name: result
-    app: app:votacion
+    app: app-votacion
 spec:
   type: NodePort
   ports:
   - port: 80
     targetPort: 80
-    NodePort: 31001
+    nodePort: 31001
     name: "result-service"
   selector:
     name: result
-    app: app:votacion 
+    app: app-votacion 
+  

@@ -4,7 +4,7 @@ metadata:
   name: db
   labels:
     name: db
-    app: app:votacion
+    app: app-votacion
 spec:
   type: ClusterIP
   ports:
@@ -13,4 +13,4 @@ spec:
     name: "db-service"
   selector:
     name: db
-    app: app:votacion 
+    app: app-votacion 
